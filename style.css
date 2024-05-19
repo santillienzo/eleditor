@@ -1,0 +1,71 @@
+/*
+Theme Name: El editor
+Theme URI: https://wpactivethemes.com/download/full-site-editing-themes/
+Template: news-fse
+Author: Enzo Santilli
+Author URI: http://eaglevisionit.com/
+Description: News FSE is a block-based WordPress theme that is compatible with the Gutenberg editor and popular page builders. IT a full site editing theme that comes with a dark version by default. However, it also enables users to switch to a light version if they prefer a brighter color scheme. This option can be accessed through the settings where users can easily toggle between the two versions. It is designed to help users create beautiful and modern websites with ease. It comes with a variety of features such as custom page layouts, custom widgets, and a drag-and-drop page builder. It also includes multiple free blocks that allow users to customize their websites with ease. Additionally, News FSE is optimized for SEO and speed, making it a great choice for any website.
+Tags: editor-style,right-sidebar,custom-menu,custom-logo,custom-colors,featured-images,full-site-editing,block-patterns,sticky-post,threaded-comments
+Version: 1.0.3.1714610702
+Updated: 2024-05-01 21:45:02
+
+*/
+
+:root {
+    --background-color: hsl(72, 100%, 99%);
+    --primary-color: #393c41;
+    --highlighted-color: #908470;
+    --highlighted-color-hover: #726958;
+    --secondary-highlight-color: #82382c;
+    --secondary-highlight-color-hover: #83482c;
+    --tertiary-highlight-color: #a7b489;
+    --tertiary-highlight-color-hover: #8f9864;
+}
+
+body {
+    background-color: var(--background-color) !important;
+}
+
+
+/* HEADER */
+
+.header-container {
+    -moz-box-shadow: 0 13px 16px -4px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 13px 16px -4px rgba(0,0,0,0.1);
+    -o-box-shadow: 0 13px 16px -4px rgba(0,0,0,0.1);
+    box-shadow: 0 13px 16px -4px rgba(0,0,0,0.1);
+    background-color: var(--background-color) !important;
+}
+
+
+.header-title{
+    color: var(--primary-color);
+}
+.header-menu{
+    color: var(--primary-color);
+}
+
+.icon-search {
+    fill: var(--primary-color);
+}
+
+.icon-search-container {
+    flex-basis: 35px !important
+}
+
+.wp-block-navigation-item__content span{
+    color: var(--primary-color) !important;
+}
+
+/* CONTROL CLASSES */
+.hide {
+    display: none !important;
+}
+
+/* Navegación entradas */
+.post-navigation-link-previous .post-navigation-link__label::before {
+    content: "< Anterior";
+}
+.post-navigation-link-next .post-navigation-link__label::before {
+    content: "Siguiente >";
+}
